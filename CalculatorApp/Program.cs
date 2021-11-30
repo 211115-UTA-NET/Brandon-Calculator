@@ -1,63 +1,51 @@
-﻿ class Program
-{
-//string cont = 'y';
-//while (continue == 'y' || continue == 'Y')
-// {
-    static void Main(String[] args)
-    {
-        //Declare variables and then intialize to zero
-        //double fnum = 0; double snum = 0;
+﻿
+       bool go = true;
+       char op;
+       double fnum = 0; 
+       double snum = 0; 
 
-        //Display name as my calculator app
-        Console.WriteLine("\tMy Calculator App\r");
-        Console.WriteLine("-------------------------------\n");
-        
-        //Prompt the user to type the first number
-        //Declare and intialize variables
-        Console.WriteLine("Type a number, and press Enter");
-        double fnum = double.Parse(Console.ReadLine());
-
-        //Prompt the user to type the second number
-        //Declare and intialize variables 
-        Console.WriteLine("Type another number, and press Enter");
-        double snum = double.Parse(Console.ReadLine());
-
-        Console.WriteLine("Choose an operator: +, -, *, /");
-
-        //Use a switch statement to swith between operation
-        switch (Console.ReadLine())
+        while (go)
         {
-            case "+":
-            Console.WriteLine(fnum + snum);
-            break;
+            Console.WriteLine("\n\tSimple Calculator Program\r\r"); //Display name as Simple Calculator Program
+            Console.WriteLine("-----------------------------------------------");
+                
+            Console.WriteLine("Type A Number, And Press Enter");
+            fnum = Convert.ToDouble(Console.ReadLine());
 
-            case "-":
-            Console.WriteLine(fnum - snum);
-            break;
+            Console.WriteLine("Type Another Number, And Press Enter");
+            snum = Convert.ToDouble(Console.ReadLine());
 
-            case "*":
-            Console.WriteLine(fnum * snum);
-            break;
+            Console.WriteLine("Enter An Operation, And Press Enter ( +, -, *, / )\r");
+    
+            op = Console.ReadLine()[0];
 
-            case "/":
-            if (snum == 0) //without an if statement, ∞ will occur 
-            Console.WriteLine("ERROR, can't divide by zero");
-            else 
-            Console.WriteLine(fnum / snum);
-            break;
+            switch ( op )
+            {     
+                case '+':
+                Console.WriteLine(fnum + snum);
+                break;
 
-            default:
-            Console.WriteLine("Invalid Operation!");
-            break;
-        } 
-        //Wait for the user to respond before closing
-        Console.Write("Press any key to close My Calculator App"); 
-        Console.ReadKey();
-    }
- //}
-}
-    //Console.WriteLine("Result: {0}");
-    //Console.WriteLine("Continue?: Press y or n");
-    //continue = Console.ReadLine();
+                case '-':
+                Console.WriteLine(fnum - snum);
+                break;
+                
+                case '*':
+                Console.WriteLine(fnum * snum);
+                break;
+                
+                case '/':
+                    if (snum == 0) //without an if statement, ∞ will occur 
+                    Console.WriteLine("ERROR, Can't Divide By Zero!");
+                    else
+                    Console.WriteLine(fnum / snum);
+                    break;
 
-    //Console.WriteLine("Thank you for using our calculator. Press any key to exit application.");
+                default:
+                Console.WriteLine("You Chose An Invalid Operation!"); //display if user iputs an invalid operation
+                break;
+            }
+            Console.Write("Press 'n' And Enter To Exit Simple Calculator Program: Or Any Other Key To Continue: ");
+            if (Console.ReadLine() == "n")
+            {go = false;}
+        }
+      

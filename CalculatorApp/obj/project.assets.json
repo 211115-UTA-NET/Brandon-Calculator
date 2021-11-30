@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brandonjordan/Revature1/Brandjordan/CalculatorApp/CalculatorApp.csproj",
+      "projectUniqueName": "/Users/brandonjordan/Revature1/BrandonCalculator/Brandon-Calculator/CalculatorApp/CalculatorApp.csproj",
       "projectName": "CalculatorApp",
-      "projectPath": "/Users/brandonjordan/Revature1/Brandjordan/CalculatorApp/CalculatorApp.csproj",
+      "projectPath": "/Users/brandonjordan/Revature1/BrandonCalculator/Brandon-Calculator/CalculatorApp/CalculatorApp.csproj",
       "packagesPath": "/Users/brandonjordan/.nuget/packages/",
-      "outputPath": "/Users/brandonjordan/Revature1/Brandjordan/CalculatorApp/obj/",
+      "outputPath": "/Users/brandonjordan/Revature1/BrandonCalculator/Brandon-Calculator/CalculatorApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/brandonjordan/.nuget/NuGet/NuGet.Config"
